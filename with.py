@@ -18,7 +18,15 @@ if __name__ == '__main__':
     #df.printSchema()
     #df.show()
 
-    df.withColumn("state", lit("MH"))
-    df.printSchema()
+    # df.withColumn("state", lit("MH")).show()
+    # df.printSchema()
     df.show()
+
+    # df.withColumnRenamed("name","person").printSchema()
+    #df.filter(df.gender == "Female").select("id","name","gender").show()
+    #df.withColumn("salary", col("salary")*100).show()
+
+
+
+
 
